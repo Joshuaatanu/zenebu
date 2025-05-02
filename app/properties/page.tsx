@@ -34,31 +34,7 @@ const mockProperties = [
 ];
 
 export default function PropertiesPage() {
-  const [searchQuery, setSearchQuery] = useState('');
-  const [selectedType, setSelectedType] = useState('all');
-  const [minPrice, setMinPrice] = useState('');
-  const [maxPrice, setMaxPrice] = useState('');
-  const [bedrooms, setBedrooms] = useState('');
-
-  const propertyTypes = [
-    { value: 'all', label: 'All Types' },
-    { value: 'apartment', label: 'Apartment' },
-    { value: 'house', label: 'House' },
-    { value: 'condo', label: 'Condo' },
-    { value: 'townhouse', label: 'Townhouse' },
-    { value: 'studio', label: 'Studio' }
-  ];
-
-  const filteredProperties = mockProperties.filter(property => {
-    const matchesSearch = property.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-                         property.address.toLowerCase().includes(searchQuery.toLowerCase());
-    const matchesType = selectedType === 'all' || property.type === selectedType;
-    const matchesPrice = (!minPrice || property.price >= parseInt(minPrice)) &&
-                        (!maxPrice || property.price <= parseInt(maxPrice));
-    const matchesBedrooms = !bedrooms || property.bedrooms === parseInt(bedrooms);
-    
-    return matchesSearch && matchesType && matchesPrice && matchesBedrooms;
-  });
+  const filteredProperties = mockProperties;
 
   return (
     <div className="min-h-screen bg-[#F8F8FF] flex">
