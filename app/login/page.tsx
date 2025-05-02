@@ -1,6 +1,5 @@
 'use client';
 
-import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
@@ -117,7 +116,7 @@ export default function LoginPage() {
             {/* Sign Up Link */}
             <div className="text-center">
               <p className="text-[15px] text-gray-600">
-                Don't have an account?{' '}
+                Don&apos;t have an account?{' '}
                 <Link href="/signup" className="font-medium text-[#6C5DD3] hover:text-[#5B4EC2] transition-colors">
                   Sign up for free
                 </Link>
@@ -128,7 +127,7 @@ export default function LoginPage() {
           {/* Footer */}
           <div className="mt-10 text-center text-xs text-gray-500">
             <p>
-              You agree to Estatery's{' '}
+              You agree to Estatery&apos;s{' '}
               <Link href="/terms" className="text-[#6C5DD3] hover:text-[#5B4EC2] transition-colors">Terms of Use</Link>
               {' & '}
               <Link href="/privacy" className="text-[#6C5DD3] hover:text-[#5B4EC2] transition-colors">Privacy Policy</Link>

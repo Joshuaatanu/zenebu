@@ -1,6 +1,5 @@
 'use client';
 
-import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
@@ -136,7 +135,7 @@ export default function SignupPage() {
           {/* Footer */}
           <div className="mt-10 text-center text-xs text-gray-500">
             <p>
-              By creating an account, you agree to Estatery's{' '}
+              By creating an account, you agree to Estatery&apos;s{' '}
               <Link href="/terms" className="text-[#6C5DD3] hover:text-[#5B4EC2] transition-colors">Terms of Use</Link>
               {' & '}
               <Link href="/privacy" className="text-[#6C5DD3] hover:text-[#5B4EC2] transition-colors">Privacy Policy</Link>

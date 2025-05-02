@@ -4,7 +4,6 @@ import { useState } from 'react';
 import Sidebar from '../components/Sidebar';
 
 export default function SettingsPage() {
-  const [activeTab, setActiveTab] = useState('profile');
   const [displayName, setDisplayName] = useState('John');
   const [fullName, setFullName] = useState('John Doe');
   const [phoneNumber, setPhoneNumber] = useState('+1 234-567-8900');

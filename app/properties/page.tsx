@@ -2,7 +2,6 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 import Sidebar from '../components/Sidebar';
 
 // Mock data for properties

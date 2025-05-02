@@ -1,9 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import Image from 'next/image';
 import { useState } from 'react';
-import Sidebar from '../../components/Sidebar';
 import { useRouter } from 'next/navigation';
 
 export default function AddPropertyPage() {
@@ -12,7 +10,7 @@ export default function AddPropertyPage() {
   const router = useRouter();
   
   return (
-    <div className="flex-1 flex flex-col">
+    <div className="flex-1 flex flex-col bg-white min-h-screen">
       <main className="flex-1 max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {/* Back to Dashboard */}
         <Link href="/properties" className="inline-flex items-center text-gray-600 hover:text-gray-900 mb-8">
@@ -145,7 +143,7 @@ export default function AddPropertyPage() {
                 {/* Representation */}
                 <div className="space-y-3">
                   <div className="flex items-center gap-1">
-                    <span className="text-sm font-medium text-gray-700">I'm representing</span>
+                    <span className="text-sm font-medium text-gray-700">I&apos;m representing</span>
                     <button
                       type="button"
                       className="text-[#6C5DD3] hover:text-[#5B4EC2]"
