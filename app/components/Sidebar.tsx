@@ -43,7 +43,7 @@ export default function Sidebar() {
   return (
     <aside className="hidden md:flex flex-col bg-white border-r min-h-screen w-[280px] py-6 transition-all duration-300 ease-in-out group hover:shadow-lg">
       <div className="px-6 mb-8">
-        <h1 className="text-xl font-bold text-gray-900">Oyin</h1>
+        <h1 className="text-xl font-bold text-gray-900">Estatery</h1>
         <p className="text-sm text-gray-500">Property Management</p>
       </div>
       
